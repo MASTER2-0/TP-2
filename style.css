@@ -1,0 +1,406 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+}
+
+header img {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0065fc;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(21, 126, 218)
+}
+
+.recherche {
+    padding: 40px 50px;
+
+}
+
+.recherche h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.recherche p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.barre {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 380px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)
+
+}
+
+.barre i {
+    padding: 15px;
+    background-color: #f2f2f2;
+    color: black;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+}
+
+.barre input {
+    border: none;
+    padding: 19px;
+    font-size: 10px;
+    flex: 1;
+    outline: none;
+    font-weight: bold;
+}
+
+.barre button {
+    background-color: #0065fc;
+    color: white;
+    border: none;
+    padding: 20px 25px;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.filtres p {
+    font-weight: bold;
+    font-size: 22px;
+    margin-right: 20px; 
+}
+
+.filtres {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.filtres button {
+    background-color: white;
+    border: 3px solid #d9d9d9;
+    color: black;
+    padding: 15px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filtres button i {
+    margin-right: 10px;
+    color: #0065fc; 
+    font-size: 22px;
+}
+
+
+.filtres button:hover {
+    background-color: #0065fc;
+    color: white;
+}
+
+.filtres button:hover i {
+    color: white;
+}
+
+.logements-info {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+    font-style: italic;
+}
+
+.logements-info i {
+    color: #0065fc;
+    margin-right: 5px;
+}
+
+.hebergements-populaires {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px auto;
+    max-width: 1200px;
+    gap: 20px;
+    text-decoration: none;
+}
+
+
+.hebergements {
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 4;
+    text-decoration: none;
+
+}
+
+.hebergements h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.hebergements-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+.card-content {
+    padding: 10px;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+.stars {
+    color: #149ad4;
+}
+
+
+.show-more {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #0065FC;
+    text-decoration: none;
+}
+
+.show-more:hover {
+    text-decoration: underline;
+}
+
+
+.populaires {
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1;
+    max-width: 350px;
+}
+
+
+.populaires h2 {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.populaires-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.populaires-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.popular-card {
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.popular-card:hover {
+    transform: scale(1.05);
+}
+
+
+.popular-card img {
+    width: 35%;
+    height: 110px;
+    object-fit: cover;
+}
+
+
+.popular-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+}
+
+
+.popular-content h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.popular-content p {
+    font-size: 14px;
+}
+
+
+.stars {
+    color: #149ad4;
+    font-size: 14px;
+}
+
+.activites {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.activites h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.activites-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.activite {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.activite img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.activite.large {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.activite.large img {
+    height: 410px;
+}
+
+.activite h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: #F2F2F2;
+    padding: 30px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
