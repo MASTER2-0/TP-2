@@ -26,11 +26,6 @@ nav ul li a {
     padding: 10px 15px;
     border-radius: 5px;
 }
-
-nav ul li a:hover {
-    background-color: rgb(21, 126, 218)
-}
-
 .recherche {
     padding: 40px 50px;
 
